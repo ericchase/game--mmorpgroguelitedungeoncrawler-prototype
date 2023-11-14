@@ -78,29 +78,27 @@ bOpen.addEventListener('click', async function () {
     return false;
   }
   // ws = new WebSocket('wss:\/\/signal-server.fly.dev\/echo');
-  {
-    const res = await fetch('http://127.0.0.1:8080/echo');
+  try {
+    const res = await fetch('http://127.0.0.1:8080/create/echo');
     out(await res.text());
+    ws = new WebSocket('ws://127.0.0.1:8080/echo');
+    ws.onopen = function () {
+      out('OPEN');
+    };
+    ws.onclose = function () {
+      out('CLOSE');
+      ws = null;
+    };
+    ws.onmessage = async function (evt) {
+      out('RESPONSE: ' + evt.data);
+    };
+    ws.onerror = function (evt) {
+      console.log(evt);
+      out('ERROR');
+    };
+  } catch (err) {
+    console.log(err);
   }
-  ws = new WebSocket('ws://127.0.0.1:8080/echo');
-  ws.onopen = function () {
-    out('OPEN');
-  };
-  ws.onclose = function () {
-    out('CLOSE');
-    ws = null;
-  };
-  ws.onmessage = async function (evt) {
-    if (evt.data instanceof Blob) {
-      out('RESPONSE: ' + (await evt.data.text()));
-    } else {
-      out('RESPONSE: ' + decoder.decode(evt.data));
-    }
-  };
-  ws.onerror = function (evt) {
-    console.log(evt);
-    out('ERROR');
-  };
   return false;
 });
 

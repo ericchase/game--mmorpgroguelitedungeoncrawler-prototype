@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "server.ts",
+  "main": "./src/server.ts",
   "scripts": {
-    "dev": "tsx watch ./server.ts",
+    "dev": "tsx watch ./src/server.ts",
     "format": "prettier . --write",
-    "start": "tsx ./server.ts"
+    "start": "tsx ./src/server.ts"
   },
   "keywords": [],
   "author": "",
