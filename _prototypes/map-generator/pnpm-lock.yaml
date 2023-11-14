@@ -1,0 +1,23 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  random-seedable:
+    specifier: ^1.0.8
+    version: 1.0.8
+  simplex-noise:
+    specifier: ^4.0.1
+    version: 4.0.1
+
+packages:
+
+  /random-seedable@1.0.8:
+    resolution: {integrity: sha512-f6gzvNhAnZBht1Prn0e/tpukUNhkANntFF42uIdWDPriyEATYaRpyH8A9bYaGecUB3AL+dXeYtBUggy18fe3rw==}
+    dev: false
+
+  /simplex-noise@4.0.1:
+    resolution: {integrity: sha512-zl/+bdSqW7HJOQ0oDbxrNYaF4F5ik0i7M6YOYmEoIJNtg16NpvWaTTM1Y7oV/7T0jFljawLgYPS81Uu2rsfo1A==}
+    dev: false

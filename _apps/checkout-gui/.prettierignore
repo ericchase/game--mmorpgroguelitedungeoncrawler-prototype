@@ -1,0 +1,13 @@
+**/*
+
+# root folder
+!/*.css
+!/*.html
+!/*.js
+!/*.json
+!/*.md
+!/*.ts
+
+# src folder
+!/src
+!/src/**
