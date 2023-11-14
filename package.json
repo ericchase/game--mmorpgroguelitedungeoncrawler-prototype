@@ -1,0 +1,23 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "tsx watch ./server.ts",
+    "format": "prettier . --write",
+    "start": "tsx ./server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsx": "^4.1.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "prettier": "^3.1.0",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.33.0"
+  }
+}
