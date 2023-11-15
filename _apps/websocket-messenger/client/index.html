@@ -2,65 +2,43 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="./index.css" />
     <script src="./index.js" type="module" defer></script>
-    <style>
-      :root {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.85em;
-      }
-      .v-margin {
-        margin-block: 0.75em;
-      }
-      .clickable {
-        box-sizing: border-box;
-        border: 0.0625em solid lightgray;
-        border-radius: 0.25em;
-        padding: 0.125em 0.5em;
-        width: max-content;
-        text-align: center;
-        cursor: pointer;
-        user-select: none;
-      }
-      .editable {
-        box-sizing: border-box;
-        position: absolute;
-        border: 0.0625em solid lightgray;
-        border-radius: 0.25em;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1rem;
-        text-align: center;
-      }
-      #output {
-        border: 0.0625em solid lightgray;
-        border-radius: 0.25em;
-        min-height: 10em;
-      }
-    </style>
   </head>
   <body>
-    <p>Request a new room.</p>
-    <button type="button" id="new-room">New Room</button>
-    <div class="v-margin">
-      Room Id:&nbsp;<span class="clickable" id="room-id"></span>&nbsp;<input class="editable" id="input-room-id" type="text" hidden /><button
-        id="copy-room-id"
-      >
-        Copy
-      </button>
+    <div class="col">
+      <div class="col group">
+        <div>Encryption Key</div>
+        <button type="button" id="generate-keyiv">Generate Key</button>
+        <div class="row">
+          <button id="copy-b64-keyiv">Copy</button>
+          <div class="clickable" id="b64-keyiv"></div>
+          <input class="editable" id="input-b64-keyiv" type="text" hidden />
+        </div>
+      </div>
     </div>
-    <button type="button" id="generate-keyiv">Generate KeyIv</button>
-    <div class="v-margin">
-      KeyIv:&nbsp;<span class="clickable" id="b64-keyiv"></span>&nbsp;<input class="editable" id="input-b64-keyiv" type="text" hidden /><button
-        id="copy-b64-keyiv"
-      >
-        Copy
-      </button>
+    <div class="row wrap items-start">
+      <div class="col group">
+        <div class="row">
+          <button type="button" id="connect">Connect</button>
+          <button type="button" id="disconnect">Disconnect</button>
+        </div>
+        <div class="row">
+          <input id="message" type="text" value="Hello world!" />
+          <button type="button" id="send">Send</button>
+        </div>
+        <div class="fill-w" id="output"></div>
+      </div>
+      <div class="col group">
+        <div>Request a new room.</div>
+        <div>Room ID</div>
+        <button type="button" id="new-room">New Room</button>
+        <div class="row">
+          <button id="copy-room-id">Copy</button>
+          <div class="clickable" id="room-id"><span></span></div>
+          <input class="editable" id="input-room-id" type="text" hidden />
+        </div>
+      </div>
     </div>
-    <button type="button" id="connect">Connect</button>
-    <button type="button" id="disconnect">Disconnect</button>
-    <p>
-      <input id="message" type="text" value="Hello world!" />
-      <button type="button" id="send">Send</button>
-    </p>
-    <div id="output" style="max-height: 70vh; overflow-y: scroll"></div>
   </body>
 </html>
