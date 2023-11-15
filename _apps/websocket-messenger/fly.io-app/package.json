@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "tsx ./server.ts"
+  },
+  "dependencies": {
+    "tsx": "^4.1.2",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.33.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.10"
+  }
+}
