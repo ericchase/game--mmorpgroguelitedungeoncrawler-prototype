@@ -13,11 +13,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tsx": "^4.1.1"
+    "dotenv": "^16.3.1",
+    "prettier": "^3.1.0"
   },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "prettier": "^3.1.0",
+    "tsx": "^4.1.2",
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.33.0",
     "uuid": "^9.0.1"
   }
