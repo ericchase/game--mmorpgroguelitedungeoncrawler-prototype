@@ -1,0 +1,16 @@
+**/*
+
+# root file types
+!/*.css
+!/*.html
+!/*.js
+!/*.json
+!/*.md
+!/*.ts
+
+# entire folders
+!/src
+!/src/**
+
+!/client
+!/client/**
