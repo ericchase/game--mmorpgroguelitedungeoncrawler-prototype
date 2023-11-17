@@ -10,8 +10,8 @@ body {
   max-width: 960px;
 }
 body {
-  gap: 0.5em;
-  padding: 1em;
+  /* gap: 0.5em; */
+  /* padding: 1em; */
 }
 .col {
   display: flex;
@@ -48,7 +48,14 @@ body {
   overflow-y: auto;
 }
 .max-vh {
-  max-height: calc(100vh - 2em);
+  max-height: 80vh;
+  max-height: 80dvh;
+}
+.pad {
+  padding: 1em;
+}
+.wrapper {
+  height: 100vh;
 }
 
 /* custom border */
