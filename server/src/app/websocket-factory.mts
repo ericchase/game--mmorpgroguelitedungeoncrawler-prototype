@@ -10,17 +10,20 @@ export function addWebSocket(app: uWS.TemplatedApp, name: string) {
       maxPayloadLength: 16 * 1024 * 1024,
       idleTimeout: 10,
       open: (ws) => {
-        console.log('A WebSocket connected on /' + name + '.');
+        console.log('websocket connect /' + name);
+        ws.subscribe('broadcast');
       },
       message: (ws, message, isBinary) => {
-        // echo
-        let ok = ws.send(message, isBinary, true);
+        console.log('websocket message /' + name);
+        console.log(message);
+        ws.publish('broadcast', message, isBinary);
       },
       drain: (ws) => {
-        console.log('WebSocket backpressure: ' + ws.getBufferedAmount());
+        console.log('websocket backpressure /' + name);
+        console.log('size ' + ws.getBufferedAmount());
       },
       close: (ws, code, message) => {
-        console.log('WebSocket closed');
+        console.log('websocket disconnect /' + name);
       },
     });
     return true;
