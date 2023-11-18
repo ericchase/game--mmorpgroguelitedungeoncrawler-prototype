@@ -210,6 +210,5 @@ function showMessageHistoryDown() {
 function out(...message) {
   const d = document.createElement('div');
   d.textContent = message.join(' ');
-  divOutput.appendChild(d);
-  divOutput.scroll(0, divOutput.scrollHeight);
+  divOutput.prepend(d);
 }
