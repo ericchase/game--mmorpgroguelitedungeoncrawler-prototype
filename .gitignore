@@ -4,7 +4,5 @@
 *.exe
 *.log*
 *.zip
-/build
-/dist
-/package
-node_modules
+build/
+node_modules/
