@@ -1,0 +1,38 @@
+.fill-h {
+  height: 100%;
+}
+.fill-w {
+  width: 100%;
+}
+
+.min-content {
+  max-height: min-content;
+  max-width: min-content;
+}
+.max-content {
+  max-height: max-content;
+  max-width: max-content;
+}
+
+.space {
+  min-height: 1em;
+  min-width: 1em;
+}
+.half-space {
+  min-height: 0.5em;
+  min-width: 0.5em;
+}
+
+.mba {
+  margin-block: auto;
+}
+.mia {
+  margin-inline: auto;
+}
+
+.h0 {
+  height: 0;
+}
+.w0 {
+  width: 0;
+}

@@ -1,0 +1,13 @@
+.none {
+  display: none;
+}
+.contents {
+  display: contents;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.collapse {
+  visibility: collapse;
+}

@@ -1,0 +1,28 @@
+@import url('lib.css');
+
+#box {
+  /* display: inline-block; */
+  min-width: 4em;
+  cursor: text;
+  user-select: none;
+  word-wrap: anywhere;
+}
+
+#edit {
+  resize: none;
+  top: 0;
+  left: 0;
+}
+
+#box,
+#edit {
+  border: 0.0625em solid gray;
+  border-radius: 0.25em;
+  padding: 0.125em 0.25em;
+}
+
+#mold {
+  display: inline-block;
+  max-width: 0;
+  visibility: collapse;
+}

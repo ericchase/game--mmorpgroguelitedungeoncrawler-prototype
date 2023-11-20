@@ -1,0 +1,31 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+  min-width: auto;
+}
+.row {
+  display: flex;
+  min-height: auto;
+  min-width: auto;
+}
+.gap {
+  gap: 1em;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.align-center {
+  align-items: center;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}

@@ -1,0 +1,12 @@
+@import url('./lib.display.css');
+@import url('./lib.flex.css');
+@import url('./lib.position.css');
+@import url('./lib.size.css');
+
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}

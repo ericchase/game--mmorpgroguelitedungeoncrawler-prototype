@@ -1,0 +1,63 @@
+@import url('./lib.css');
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+#upload-image {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+#upload-image > label {
+  cursor: pointer;
+}
+
+#tile-palette {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px;
+}
+
+.pad {
+  min-height: 1em;
+  min-width: 1em;
+}
+
+.border {
+  border: 1px solid black;
+  border-radius: 0.75em;
+}
+
+button {
+  appearance: none;
+  background: none;
+  border: 0.0625em solid gray;
+  border-radius: 0.25em;
+  padding: 0.125em 0.25em;
+  cursor: pointer;
+}
+#upload-images-button > * {
+  cursor: pointer;
+}
+
+.settings-grid {
+  display: grid;
+  max-width: max-content;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.5em;
+  row-gap: 0.25em;
+  align-items: center;
+}
