@@ -6,7 +6,6 @@
   "main": "./src/server.mts",
   "scripts": {
     "dev": "tsx watch ./src/server.mts",
-    "format": "prettier . --write",
     "start": "tsx ./src/server.mts"
   },
   "keywords": [],
@@ -17,7 +16,6 @@
   },
   "dependencies": {
     "dotenv": "^16.3.1",
-    "prettier": "^3.1.0",
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.33.0"
   }
 }

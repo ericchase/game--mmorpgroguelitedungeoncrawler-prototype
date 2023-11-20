@@ -6,15 +6,13 @@
   "main": "./src/server.ts",
   "scripts": {
     "dev": "tsx watch ./src/server.ts",
-    "format": "prettier . --write",
     "start": "tsx ./src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "dotenv": "^16.3.1",
-    "prettier": "^3.1.0"
+    "dotenv": "^16.3.1"
   },
   "dependencies": {
     "tsx": "^4.1.2",

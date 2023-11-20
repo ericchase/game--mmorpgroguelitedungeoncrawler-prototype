@@ -1,20 +1,7 @@
-* {
-  box-sizing: border-box;
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
-}
+@import url('./lib.css');
 
 :root {
   background-color: black;
-}
-
-html,
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
 }
 
 #root {

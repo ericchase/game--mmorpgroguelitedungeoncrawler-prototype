@@ -59,6 +59,9 @@ body {
   min-height: 0.5em;
   min-width: 0.5em;
 }
+.relative {
+  position: relative;
+}
 
 /* custom border */
 button,
@@ -81,6 +84,8 @@ input,
 }
 .editable-overlay {
   position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .editable > span:not(.text) {

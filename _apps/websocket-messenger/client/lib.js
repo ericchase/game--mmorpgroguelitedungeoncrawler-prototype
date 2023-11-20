@@ -30,7 +30,6 @@ export function swapInnerSpanInput(div, span, input) {
  */
 export function resizeSpanInput(div, el) {
   const rect = div.getBoundingClientRect();
-  el.style.left = rect.left + 'px';
   el.style.width = rect.width + 'px';
   el.style.height = rect.height + 'px';
 }

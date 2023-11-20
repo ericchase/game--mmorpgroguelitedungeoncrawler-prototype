@@ -1,16 +1,13 @@
-**/*
+**/.vscode/
 
-# root file types
-!/*.css
-!/*.html
-!/*.js
-!/*.json
-!/*.md
-!/*.ts
+# output directories
+**/build/
+**/debug/
+**/dist/
+**/target/
 
-# entire folders
-!/src
-!/src/**
-
-!/client
-!/client/**
+# lock files
+**/bun.lockb
+**/package-lock.json
+**/pnpm-lock.yaml
+**/yarn.lock
